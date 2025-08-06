@@ -726,4 +726,4 @@ async def generate_medical_report(patient_id: str, data: PatientDataRequest):
 if __name__ == "__main__":
     print("SERVER_START: Attempting to start Uvicorn server.")
     # To run: uvicorn app:app --reload --port 8003 (assuming your file is named app.py)
-    uvicorn.run("app2:app", host="0.0.0.0", port=8009, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=8009, reload=True)
